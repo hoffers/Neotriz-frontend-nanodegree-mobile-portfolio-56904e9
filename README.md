@@ -1,10 +1,23 @@
-To open project for viewing.
-Click index.html to get started and view all pages associated with project, and enjoy.
+## My notes about what I did to get the index page speed to 90 and above:
+1. downloaded the portfolio folder from git
+2. Analysed it and found that the scripts should be async
+3. removed the css include and made inline(inside the html)
+4. the images for profile and pizzaria were way too big and minimized those
+5. I have a hosting and put all these there and got speed of 94 / 95 (www.fancyafghans.com)
+6. So I think for part 1 I should be good now.
+7. used some code from http://davidwalsh.name/google-fonts-api to use instead of creating the critical resource of webfont
 
-Spent countless hours researching how to optimize page loads, and had a very difficult time with trying to get the pizza page to render correctly and efficiently.
+##Part 2:
+1. line 533 lowerd the looping number of pizzas to 25 
+2. created a variable outside of the loop for scrolTop / 1250 lines 509 and 512
+3. took the dx and newwidth outside of the loop in lines 454 and created a count variable for loop counter line 456
+4. included the FPS counts image while testin in FPS.png. the meter was not correct but the bars should correctly.
+##After evaluation
+1. moved var pizzasDiv = document.getElementById("randomPizzas"); out of loop at line 475
+2. used window.window.innerHeight to get the window hight and calculate the count of pizzas in line 533
+3. changed to getElementsByClassName in line 508
+4. 
 
-
------------------			------------	---------	---------		---------	----------
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
