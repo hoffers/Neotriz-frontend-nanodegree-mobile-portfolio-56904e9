@@ -1,3 +1,10 @@
+To open project for viewing.
+Click index.html to get started and view all pages associated with project, and enjoy.
+
+Spent countless hours researching how to optimize page loads, and had a very difficult time with trying to get the pizza page to render correctly and efficiently.
+
+
+-----------------			------------	---------	---------		---------	----------
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
@@ -5,8 +12,6 @@ Your challenge, if you wish to accept it (and we sure hope you will), is to opti
 To get started, check out the repository, inspect the code,
 
 ### Getting started
-
-####Part 1: Optimize PageSpeed Insights score for index.html
 
 Some useful tips to help you get started:
 
@@ -26,15 +31,9 @@ Some useful tips to help you get started:
   $> ngrok 8080
   ```
 
-1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! Optional: [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
+1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights! [More on integrating ngrok, Grunt and PageSpeed.](http://www.jamescryer.com/2014/06/12/grunt-pagespeed-and-ngrok-locally-testing/)
 
 Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!
-
-####Part 2: Optimize Frames per Second in pizza.html
-
-To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. 
-
-You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
@@ -71,24 +70,3 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://nicoledominguez.com/portfolio/">http://nicoledominguez.com/portfolio/</a>
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
-
-
-**How to Open file**
-1) Open the destinated folder
-2) Open index.html
-3) Browse the html file for fun
-4) Click Cam's Pizzeria link in the html.file. It will lead you to pizza.html
-5) Open dev tool to see the following
-	a)Under console tab, monitor the time to resize the pizza of the page by toggling the size pizza scroll bar on the page
-	b)Under timeline tab, record FPS of the page by scrolling the page up/down. 
-
-
-**REVISED OPTIMIZATION***
-main.js-
-1)Changed the QuerySelector to getElements command 
-2)Optimized loop under updatePositions() by
-	-moving out variables that had consistent values for each computation such as phase[], items.length, document.body.scrolltop
-3)Optimized loop under resizePizzas function by
-	-moving out the variable document.querySelector...offsettWidth (var theWidth)
-  	-modified the loop changePizzaSizes(size) to speed the rendering by moving out variable allClasses
-  	  and calculation of newWidth out of the loop

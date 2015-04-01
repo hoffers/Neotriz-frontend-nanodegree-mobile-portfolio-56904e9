@@ -1,0 +1,26 @@
+Works Cited Page.
+
+I hereby certify that this is indeed, my own work.  I have used many resources such as github, live events, help on forums from fellow classmates and these websites belew for research and development for this project.
+
+http://www.frontendwebhelp.com/ 
+for general .js questions and just researching how to properly optimize a website and js.
+
+ngrog.com / i did not end up using ngrog to test my page load speeds, i could never fully get it to function properly.
+
+google had very useful tips and information..
+
+https://developers.google.com/speed/pagespeed/module/filters
+
+it did not apply to a lot of this particular project, but was very informative.
+
+using inline css could possibly help this project , if i took it even further and had more time.
+
+https://developers.google.com/speed/docs/insights/OptimizeCSSDelivery
+
+there may have been a few more websites i used for inspiration, but did not write all of them down as i was just browsing for information as my questions popped up with this project.
+
+Thanks again for the experience.
+
+Steven Gallitz
+sagfox86@yahoo.com
+sagfox86@github
